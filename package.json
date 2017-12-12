@@ -1,0 +1,38 @@
+{
+  "name": "svelte-preprocess-loader",
+  "version": "1.0.0",
+  "author": "Efthymis Sarmpanis <e.sarbanis@gmail.com>",
+  "description": "A webpack loader for svelte components preprocessing",
+  "license": "MIT",
+  "scripts": {
+    "all": "npm run lint && npm run test",
+    "test": "mocha --harmony --full-trace --check-leaks",
+    "lint": "eslint index.js test/**/*.js"
+  },
+  "keywords": [
+    "svelte",
+    "sveltejs",
+    "preprocess",
+    "webpack-loader"
+  ],
+  "dependencies": {
+    "loader-utils": "^1.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.11.1",
+    "eslint-plugin-mocha": "^4.7.0",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.6",
+    "sinon-chai": "^2.8.0",
+    "svelte": "^1.44.1"
+  },
+  "peerDependencies": {
+    "svelte": "^1.44.1",
+    "webpack": "^2.0.0 || >= 3.0.0-rc.0 || ^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:esarbanis/svelte-preprocess-loader.git"
+  }
+}
